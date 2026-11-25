@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <button class="header__burger">
+        <img src="./menu.png" alt="" />
+      </button>
+      <nav class="header__nav">
+        <button class="header__close">x</button>
+        <a href="" class="header__link">home</a>
+        <a href="" class="header__link">about</a>
+        <a href="" class="header__link">products</a>
+        <a href="" class="header__link">FAQ</a>
+        <a href="" class="header__link">contact</a>
+        <button class="header__btn">order</button>
+      </nav>
+    </header>
+    <main>
+      <section class="faq">
+        <div class="faq-item">
+          <button class="faq-question">
+            Есть ли доставка?
+            <span class="icon">+</span>
+          </button>
+          <div class="answer__wrapper">
+            <p class="faq-answer">Да, доставка работает ежедневно.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Можно ли с животными
+            <span class="icon">+</span>
+          </button>
+          <div class="answer__wrapper">
+            <p class="faq-answer">Да, можно</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            есть ли самовывоз?
+            <span class="icon">+</span>
+          </button>
+          <div class="answer__wrapper">
+            <p class="faq-answer">Да, есть</p>
+          </div>
+        </div>
+      </section>
+      <section class="tabs">
+        <div class="tabs__buttons">
+          <button class="tab-button active" data-tab="menu">Меню</button>
+          <button class="tab-button" data-tab="delivery">Доставка</button>
+          <button class="tab-button" data-tab="contacts">Контакты</button>
+        </div>
+        <div class="tab__content active" id="menu">
+          <h3>Меню</h3>
+          <p>Кофе, дессерты, завтраки</p>
+        </div>
+        <div class="tab__content" id="delivery">
+          <h3>Доставка</h3>
+          <p>Доставляем еждневно с 10:00 до 22:00</p>
+        </div>
+        <div class="tab__content" id="contacts">
+          <h3>Контакты</h3>
+          <p>7 897 67 56</p>
+        </div>
+      </section>
+      <section>
+        <form class="form">
+          <input class="name-input" type="text" placeholder="Ваше имя" />
+          <input class="email-input" type="email" placeholder="Ваш email" />
+          <textarea class="message-input" placeholder="Сообщение"></textarea>
+          <button class="form-button" type="submit">Отправить</button>
+          <p class="form-message"></p>
+        </form>
+      </section>
+    </main>
+    <div class="modal">
+      <div class="modal__container">
+        <h1 class="modal__title">Order</h1>
+        <div class="modal__body">
+          <div>
+            <p>name</p>
+            <input type="text" />
+          </div>
+          <div>
+            <p>email</p>
+            <input type="text" />
+          </div>
+          <div>
+            <p>phone</p>
+            <input type="text" />
+          </div>
+        </div>
+        <div class="modal__btns">
+          <button class="modal__cancel">cancel</button>
+          <button class="modal__apply">apply</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
